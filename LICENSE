@@ -1,0 +1,28 @@
+Business Source License 1.1
+
+Licensor: Emmanuel Whyte ("Licensor")
+
+Licensed Work: Gridworm (the "Software")
+
+Licensor hereby grants you the right to copy, modify, use, and distribute the Software, subject to the terms of this License.
+
+The Licensed Work may only be used for non-commercial purposes, including research, personal experimentation, academic use, internal evaluation, and contributions to the open-source project itself.
+
+Use Limitations:
+- You may not use the Licensed Work, or any derivative works, for any commercial purpose, including but not limited to: selling, sublicensing, hosting as a paid SaaS offering, or incorporating into a commercial product or service, without the express written consent of the Licensor.
+- You may not remove or alter this License or any attribution notices.
+
+Contributions:
+- Contributions to the Software are welcome and encouraged.
+- Any contributed code will be licensed under this same Business Source License 1.1 unless otherwise agreed upon in writing.
+
+Change Date: June 15, 2028
+
+On or after the Change Date, this License will automatically convert to the open-source MIT License.
+
+---
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+Full License Text: https://mariadb.com/bsl11
+

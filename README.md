@@ -53,3 +53,13 @@
 Full-stack creative technologist & media systems architect
 
 ---
+
+## License
+
+This project is licensed under the **Business Source License 1.1 (BUSL-1.1).**
+
+- ✅ Non-commercial use is allowed.
+- ✅ Contributions are welcome.
+- ❌ Commercial use, resale, hosting as SaaS, or incorporation into commercial offerings requires prior written consent from the Licensor.
+
+See the full [LICENSE](./LICENSE) file for details.
