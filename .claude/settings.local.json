@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(cat:*)",
+      "Bash(/home/emman/.nvm/versions/node/v22.16.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg -n \"MediaPanel\" \"/mnt/j/PROJECTS - SEAGATE/00 - 3D-WEB-Projects/GridWorm1.0/src/Gridworm.jsx\")",
+      "Bash(npm run dev:*)",
+      "Bash(/home/emman/.nvm/versions/node/v22.16.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg -A 10 -B 10 \"setSavedProjects|trimmedProjects|localStorage\\.setItem\" \"/mnt/j/PROJECTS - SEAGATE/00 - 3D-WEB-Projects/GridWorm1.0/src/Gridworm.jsx\")"
+    ],
+    "deny": []
+  }
+}
