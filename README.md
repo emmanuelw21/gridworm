@@ -29,7 +29,7 @@ Follow these simple steps to get Gridworm running on your machine:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/gridworm.git
+   git clone https://github.com/emmanuelw21/gridworm.git
    cd gridworm
    ```
 
