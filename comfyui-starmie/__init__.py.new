@@ -1,0 +1,80 @@
+"""
+ComfyUI Starmie Node
+Allows starring/favoriting outputs for sync with Gridworm
+"""
+
+print("[Starmie] Loading extension...")
+
+# Import the node
+from .starmie_node_fixed import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+
+# Apply folder path patch
+try:
+    from . import routes_patch
+    print("[Starmie] Applied folder path patch")
+except Exception as e:
+    print(f"[Starmie] Failed to apply patch: {e}")
+
+# Web extension to inject UI into ComfyUI
+WEB_DIRECTORY = "./web"
+
+print(f"[Starmie] Web directory: {WEB_DIRECTORY}")
+print(f"[Starmie] Nodes loaded: {len(NODE_CLASS_MAPPINGS)}")
+
+# Try to add HTTP routes using ComfyUI's server
+try:
+    import os
+    import json
+    from pathlib import Path
+    from datetime import datetime
+    from aiohttp import web
+    import server
+    import atexit
+    import threading
+    import time
+    
+    def delayed_route_setup():
+        """Setup routes after a delay to ensure server is ready"""
+        time.sleep(2)  # Wait for server to initialize
+        
+        if hasattr(server, 'PromptServer') and hasattr(server.PromptServer, 'instance'):
+            app = server.PromptServer.instance.app
+            selected_dir = Path("./selected-output")
+            selected_dir.mkdir(exist_ok=True)
+            manifest_path = selected_dir / ".starmie-manifest.json"
+            
+            # Ensure manifest exists
+            if not manifest_path.exists():
+                manifest = {
+                    "version": "1.0",
+                    "items": [],
+                    "metadata": {
+                        "created": datetime.now().isoformat(),
+                        "last_updated": datetime.now().isoformat()
+                    }
+                }
+                with open(manifest_path, 'w') as f:
+                    json.dump(manifest, f, indent=2)
+            
+            @app.get('/starmie/manifest')
+            async def get_manifest(request):
+                try:
+                    with open(manifest_path, 'r') as f:
+                        manifest = json.load(f)
+                    return web.json_response(manifest)
+                except Exception as e:
+                    return web.json_response({"error": str(e)}, status=500)
+            
+            @app.get('/starmie/test')
+            async def test_endpoint(request):
+                return web.json_response({"status": "ok", "message": "Starmie is working!"})
+            
+            print("[Starmie] ✨ HTTP routes added successfully!")
+    
+    # Start route setup in background
+    threading.Thread(target=delayed_route_setup, daemon=True).start()
+    
+except Exception as e:
+    print(f"[Starmie] Failed to setup routes: {e}")
+
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS', 'WEB_DIRECTORY']

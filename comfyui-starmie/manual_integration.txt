@@ -1,0 +1,40 @@
+# Manual Integration for ComfyUI server.py
+
+If the automatic installation doesn't work, add this to your ComfyUI's server.py file:
+
+## Step 1: Find where the PromptServer is created
+Look for a line like:
+```python
+server = server.PromptServer(loop)
+```
+
+## Step 2: Add after server creation
+Add this code block after the server is created but before it starts:
+
+```python
+# Starmie Integration
+try:
+    import sys
+    import os
+    # Add custom_nodes to path if not already there
+    custom_nodes_path = os.path.join(os.path.dirname(__file__), "custom_nodes")
+    if custom_nodes_path not in sys.path:
+        sys.path.append(custom_nodes_path)
+    
+    # Import and setup Starmie
+    from comfyui_starmie.starmie_integration import setup_starmie_routes
+    setup_starmie_routes(server)
+    print("✨ Starmie integration loaded successfully")
+except ImportError as e:
+    print(f"Starmie not found in custom_nodes: {e}")
+except Exception as e:
+    print(f"Failed to load Starmie integration: {e}")
+```
+
+## Step 3: Save and restart ComfyUI
+
+The endpoints should now be available at:
+- http://localhost:8188/starmie/manifest
+- http://localhost:8188/starmie/star
+- http://localhost:8188/starmie/file/{item_id}
+- ws://localhost:8188/starmie (WebSocket)
