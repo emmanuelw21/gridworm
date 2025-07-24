@@ -6,7 +6,7 @@
 ---
 
 
-GridWorm is a media organization tool that transforms how you manage, view, and present your digital content. Think of it as a visual file manager meets creative canvas meets presentation tool - all in one seamless application.
+#GridWorm is a powerful grid-based media organization tool built with React. Ideal for designers, developers, and digital artists, Gridworm offers fast drag-and-drop previews, cell editing, and export functionality.
 
 ## 🎯 Key Features Overview
 
@@ -261,7 +261,7 @@ Seamlessly bridge GridWorm with ComfyUI for AI-powered image generation and proc
 
 1. **Before Starting ComfyUI**:
    - Open the Gridworm root folder and Copy and paste the comfyui-starmie folder into your ~\ComfyUI\custom_nodes folder -- you only need to do this once
-   - From the same Gridworm root folder, navigate to the starmie-bridge folder and run the start_bridge_polling.bat file (this initiated the Starmie "watcher" in terminal)
+   - From the same Gridworm root folder, navigate to the starmie-bridge folder and run the start_bridge_polling.bat file (this initiates the Starmie "watcher" in terminal)
      
 2. Ensure ComfyUI is running on your local machine (default: http://localhost:8188)
 
@@ -286,7 +286,7 @@ Seamlessly bridge GridWorm with ComfyUI for AI-powered image generation and proc
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started with Gridworm
 
 ### Prerequisites (What You Need First)
 
@@ -450,18 +450,6 @@ When you're done:
 - Responsive design works on all screen sizes
 - Dark/Light mode for comfortable viewing
 - Memory-efficient handling of large media collections
-
----
-
-## 📄 License
-
-[Your License Here]
-
----
-
-## 🤝 Contributing
-
-[Contributing guidelines]
 
 ---
 
