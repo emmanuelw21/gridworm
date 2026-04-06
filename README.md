@@ -8,7 +8,7 @@
 
 #GridWorm is a powerful grid-based media organization tool built with React. Ideal for designers, developers, and digital artists, Gridworm offers fast drag-and-drop previews, cell editing, and export functionality.
 
-## 🎯 Key Features Overview
+## Key Features Overview
 
 - **Grid-Based Organization**: Arrange media in customizable grids up to 100×100 cells
 - **3D Visualization**: Automatic book generation and 3D viewport for immersive media experiences  
@@ -20,7 +20,7 @@
 
 ---
 
-## 📊 Standard Grid (Main Interface)
+## Standard Grid (Main Interface)
 
 The heart of GridWorm - a flexible, responsive grid system for organizing your media files.
 
@@ -41,9 +41,9 @@ The heart of GridWorm - a flexible, responsive grid system for organizing your m
   - Excel-style cell references (A1, B2, etc.) for easy navigation
   - Built-in performance tester guides you to optimal grid sizes for your system
 - **Grid Lock System**: Three intelligent modes:
-  - 🔴 **Locked**: Preserves exact cell positions when resizing
-  - 🟠 **Memory Mode**: Maintains positions with smart gap management
-  - 🟢 **Free Flow**: Automatic reflow for efficient space usage
+  - **Locked**: Preserves exact cell positions when resizing
+  - **Memory Mode**: Maintains positions with smart gap management
+  - **Free Flow**: Automatic reflow for efficient space usage
 - **Excel-Like Grid Edit Mode** (Grid Edit Button):
   - **Direct Cell Editing**: Click any cell to add text, just like Excel
   - **Cell Customization**: Change individual cell background colors
