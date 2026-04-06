@@ -30,11 +30,11 @@ The heart of GridWorm - a flexible, responsive grid system for organizing your m
   - Drag & drop files directly into specific grid cells
   - Import entire folders while maintaining structure
   - **Supported File Types**:
-    - 🖼️ **Images**: JPG, PNG, GIF, WebP, SVG
-    - 🎥 **Videos**: MP4, WebM, MOV, AVI, MKV
-    - 🎵 **Audio**: MP3, WAV, OGG, FLAC
-    - 📄 **Documents**: PDF (with page extraction), TXT, CSV
-    - 🎨 **3D Models**: GLTF, GLB, OBJ, FBX, STL
+    - **Images**: JPG, PNG, GIF, WebP, SVG
+    - **Videos**: MP4, WebM, MOV, AVI, MKV
+    - **Audio**: MP3, WAV, OGG, FLAC
+    - **Documents**: PDF (with page extraction), TXT, CSV
+    - **3D Models**: GLTF, GLB, OBJ, FBX, STL
 - **Smart Grid Management**:
   - Dynamically resize grid from 1×1 to 100×100 cells
   - Adjustable cell dimensions for optimal viewing
@@ -45,15 +45,15 @@ The heart of GridWorm - a flexible, responsive grid system for organizing your m
   - 🟠 **Memory Mode**: Maintains positions with smart gap management
   - 🟢 **Free Flow**: Automatic reflow for efficient space usage
 - **Excel-Like Grid Edit Mode** (Grid Edit Button):
-  - 📝 **Direct Cell Editing**: Click any cell to add text, just like Excel
-  - 🎨 **Cell Customization**: Change individual cell background colors
-  - 📊 **Formula Support**: Enter formulas for calculations (SUM, COUNT, etc.)
-  - 🔤 **Text Formatting**: Add labels, notes, or annotations to any cell
-  - 📐 **Mixed Content**: Combine media files with text and data in the same grid
-  - ⌨️ **Keyboard Navigation**: Tab between cells for rapid data entry
-  - 🎯 **Multi-Select**: Select multiple cells for batch operations
-  - 📥 **CSV Import**: Import CSV data directly into grid cells
-  - 📄 **PDF Page Extraction**: Click any PDF to extract individual pages or all pages as images
+  - **Direct Cell Editing**: Click any cell to add text, just like Excel
+  - **Cell Customization**: Change individual cell background colors
+  - **Formula Support**: Enter formulas for calculations (SUM, COUNT, etc.)
+  - **Text Formatting**: Add labels, notes, or annotations to any cell
+  - **Mixed Content**: Combine media files with text and data in the same grid
+  - **Keyboard Navigation**: Tab between cells for rapid data entry
+  - **Multi-Select**: Select multiple cells for batch operations
+  - **CSV Import**: Import CSV data directly into grid cells
+  - **PDF Page Extraction**: Click any PDF to extract individual pages or all pages as images
 - **Quick Access Bookshelf**: Pin favorite projects to the top shelf for instant loading
 - **Resilient File Handling**: Missing media appears as placeholders - upload the files later and they automatically reconnect
 
@@ -83,7 +83,7 @@ The heart of GridWorm - a flexible, responsive grid system for organizing your m
 
 ---
 
-## 🎨 Free Grid Canvas
+## Free Grid Canvas
 
 Transform GridWorm into a creative workspace with vector drawing and layout tools.
 
@@ -107,7 +107,7 @@ Transform GridWorm into a creative workspace with vector drawing and layout tool
 
 ---
 
-## 📚 Bookshelf
+## Bookshelf
 
 Your personal library for organizing and accessing media collections as interactive books.
 
@@ -133,7 +133,7 @@ Loading books without media present within the media panel will prompt you with 
 
 ---
 
-## 📖 3D Book Viewer
+## 3D Book Viewer
 
 Experience your media collections as interactive 3D books with realistic page-turning animations.
 
@@ -159,7 +159,7 @@ Experience your media collections as interactive 3D books with realistic page-tu
 
 ---
 
-## 📝 Text Page Creator
+## Text Page Creator
 
 Built-in document creation tool for adding text content to your media collections.
 
@@ -177,7 +177,7 @@ Built-in document creation tool for adding text content to your media collection
 
 ---
 
-## 🎮 3D Viewport
+## 3D Viewport
 
 Immersive 3D environment for advanced media manipulation and visualization.
 
@@ -204,7 +204,7 @@ Immersive 3D environment for advanced media manipulation and visualization.
 
 ---
 
-## 📤 Export Operations
+## Export Operations
 
 Comprehensive export system for maximum flexibility in how you use your organized media.
 
@@ -286,7 +286,7 @@ Seamlessly bridge GridWorm with ComfyUI for AI-powered image generation and proc
 
 ---
 
-## 🚀 Getting Started with Gridworm
+## Getting Started with Gridworm
 
 ### Prerequisites (What You Need First)
 
@@ -431,7 +431,7 @@ When you're done:
 
 ---
 
-## 💡 Use Cases
+## Use Cases
 
 - **Digital Asset Management**: Organize large media libraries visually
 - **Portfolio Presentation**: Create interactive 3D books of your work
@@ -442,7 +442,7 @@ When you're done:
 
 ---
 
-## 🛠️ Technical Highlights
+## Technical Highlights
 
 - Built with React 18 and Vite for blazing-fast performance
 - Three.js integration for smooth 3D experiences
