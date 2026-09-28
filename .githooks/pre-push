@@ -1,0 +1,7 @@
+#!/bin/sh
+# Commit guard: blocks personal or security-sensitive details (see scripts/commit_guard.py).
+for py in python3 "py -3" python; do
+  if $py -c "" >/dev/null 2>&1; then exec $py scripts/commit_guard.py; fi
+done
+echo "Commit guard: no Python found, so the push is blocked." >&2
+exit 1

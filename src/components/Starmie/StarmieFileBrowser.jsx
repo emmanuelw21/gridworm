@@ -15,9 +15,7 @@ const StarmieFileBrowser = ({
 
   // Common ComfyUI paths to try
   const commonPaths = [
-    'C:/Users/<you>/Documents/ComfyUI/selected-output',
     'C:/ComfyUI/selected-output',
-    'C:/Users/<you>/Desktop/ComfyUI/selected-output',
     '../ComfyUI/selected-output',
     './selected-output'
   ];

@@ -14,7 +14,7 @@ const StarmieBridgeConnector = ({
   const [isConnected, setIsConnected] = useState(false);
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [watchFolder, setWatchFolder] = useState('');
-  const [customFolder, setCustomFolder] = useState('C:/Users/<you>/Documents/ComfyUI/selected-output');
+  const [customFolder, setCustomFolder] = useState('');
   const [syncInterval, setSyncInterval] = useState(3000);
   const [stats, setStats] = useState({ total: 0, imported: 0, pending: 0 });
   const [lastCheck, setLastCheck] = useState(null);
@@ -223,6 +223,7 @@ const StarmieBridgeConnector = ({
               <input
                 type="text"
                 value={customFolder}
+                placeholder="Your ComfyUI selected-output folder"
                 onChange={(e) => setCustomFolder(e.target.value)}
                 className={`flex-1 px-3 py-2 rounded text-sm ${
                   darkMode 

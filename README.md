@@ -243,48 +243,9 @@ Comprehensive export system for maximum flexibility in how you use your organize
 
 ---
 
-## ⭐ Starmie - ComfyUI Integration
+## ⭐ Starmie (retired)
 
-Seamlessly bridge GridWorm with ComfyUI for AI-powered image generation and processing workflows.
-
-### **Direct ComfyUI Connection
-- **Real-Time Workflow Integration**: 
-  - Import generated media as they're created
-  - Maintain full resolution and metadata
-- **Smart Import Options**:
-  - Import all images from a workflow
-  - Select specific images to import
-  - Preserve ComfyUI metadata for traceability
-- **Zero Configuration**: Automatically detects local ComfyUI instances
-
-### How to Use with ComfyUI:
-
-1. **Before Starting ComfyUI**:
-   - Open the Gridworm root folder and Copy and paste the comfyui-starmie folder into your ~\ComfyUI\custom_nodes folder -- you only need to do this once
-   - From the same Gridworm root folder, navigate to the starmie-bridge folder and run the start_bridge_polling.bat file (this initiates the Starmie "watcher" in terminal)
-     
-2. Ensure ComfyUI is running on your local machine (default: http://localhost:8188)
-
-3. **Open Starmie Panel**:
-   - Click the "Starmie" button in GridWorm's top toolbar
-   - The panel will slide out from the bottom right corner - click and expand it
-   - Connection status shows at the top (green = connected) - if you completed the above steps successfully, Starmie auto-detects the local connection
-   - *Click the file directory to specify the output folder you want Gridworm/Starmie to "watch" (defaults to a ~\ComfyUI\selected-output folder)
-
-4. **Import from ComfyUI**:
-   - Add and connect the Starmie Universal Node as your image output node (I created several nodes you can try, but this should work in most cases)
-   - Images appear instantly in your GridWorm media panel and standard grid
-   - There will also be a check every 3 seconds to update any files that are added to the watched folder (manually or via ComfyUI)
-
-5. **Workflow Tips**:
-   - **Iterative Design**: Generate variations in ComfyUI, import the best ones to GridWorm
-   - **Batch Processing**: Run batch operations in ComfyUI, organize results in GridWorm
-   - **Version Control**: Use GridWorm's grid to track different iterations from ComfyUI
-   - **Mixed Media**: Combine AI-generated images with your existing media library
-   - **Manage Media**: Use export operations to move files locally or delete the ones you do not want individually or as mass actions
-   - - TIP: All script operations are stored in the Log tab for ease of review and intended for nondestructive staging. You can run the operations and then copy and paste the commands into terminal at a later time!
-
----
+Starmie was an early bridge that pulled images from ComfyUI straight into the grid as they were made. Its ComfyUI node and folder watcher have been retired from this repository, so it no longer runs. The panel stays in the code as a record of the idea; Gridworm today is focused on arranging media and binding it into a book.
 
 ## Getting Started with Gridworm
 

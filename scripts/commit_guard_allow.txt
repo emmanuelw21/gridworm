@@ -1,0 +1,1 @@
+# Exact phrases reviewed and allowed by the commit guard. One per line.
